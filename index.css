@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #0F172A;
+    background-color: #F8FAFC;
+  }
+
+  ::selection {
+    background-color: #BAE6FD;
+    color: #0369A1;
+  }
+}
+
+/* Glassmorphic UI helpers */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 16px 40px -12px rgba(15, 23, 42, 0.08), 0 2px 8px -2px rgba(15, 23, 42, 0.04);
+}
+
+.glass-panel-subtle {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.05);
+}
+
+.glass-card-interactive {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 12px 30px -8px rgba(15, 23, 42, 0.07);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card-interactive:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 45px -10px rgba(15, 23, 42, 0.12);
+  border-color: rgba(255, 255, 255, 1);
+}
+
+/* Clay 3D button feel */
+.btn-clay-primary {
+  background: linear-gradient(135deg, #0284C7 0%, #0369A1 100%);
+  color: #FFFFFF;
+  box-shadow: 0 8px 20px -4px rgba(2, 132, 199, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.4);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-clay-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px -4px rgba(2, 132, 199, 0.45), inset 0 1px 1px rgba(255, 255, 255, 0.6);
+}
+
+.btn-clay-secondary {
+  background: rgba(255, 255, 255, 0.9);
+  color: #0F172A;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  box-shadow: 0 6px 16px -4px rgba(15, 23, 42, 0.06);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-clay-secondary:hover {
+  transform: translateY(-2px);
+  background: #FFFFFF;
+  box-shadow: 0 10px 22px -4px rgba(15, 23, 42, 0.1);
+}

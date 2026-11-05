@@ -1,0 +1,6 @@
+{
+  "name": "AirAware AI",
+  "description": "An immersive pastel 3D environmental intelligence platform for smarter outdoor planning, pollution alerts, and daily environmental decisions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
