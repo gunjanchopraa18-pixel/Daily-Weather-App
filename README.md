@@ -1,20 +1,25 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# 🌤️ AirAware AI - Daily Weather App
 
-# Run and deploy your AI Studio app
+> An AI-powered daily weather and air quality companion that shows live weather, AQI, health alerts and a personalized day plan.
 
-This contains everything you need to run your app locally.
+**Live Demo:** https://ai.studio/apps/c1b6f307-2daf-43d9-9a97-411d89236123
 
-View your app in AI Studio: https://ai.studio/apps/c1b6f307-2daf-43d9-9a97-411d89236123
+## ✨ Features
+- Live Weather - Temperature, humidity, wind for any city
+- Live AQI - Air Quality Index with health level
+- AI Health Alerts - Alerts for asthma, kids, elderly
+- Plan My Day - AI suggests best time for walk, workout, travel
+- Eco Quests - Daily eco-friendly tasks
 
-## Run Locally
+## 🛠️ Tech Stack
+React | TypeScript | Vite | Tailwind CSS | Gemini AI API
 
-**Prerequisites:**  Node.js
+## ⚙️ Methodology
+Fetch live weather + AQI data via API -> Analyze with Gemini AI -> Generate personalized alerts & day plan -> Show in interactive scenes
 
+## 🌱 SDG
+SDG 3 - Good Health and Well-being
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 🚀 How to Run
+npm install
+npm run dev
